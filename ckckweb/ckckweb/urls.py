@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 """ckckweb URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -20,7 +20,7 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
-=======
+
 """ckckweb URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -38,8 +38,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from mysite import views
 
 urlpatterns = [
+    path('', views.index ),
     path('admin/', admin.site.urls),
 ]
->>>>>>> fe26e025d22a97c2018c874ce5edded4b68c657f
+
